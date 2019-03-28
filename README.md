@@ -1,7 +1,46 @@
 # ImageProcessing
+
 图像处理自编软件 by 笔尖
 
-C++  OpenCV  QT 
+————————————————————————分割线 by Tao [start]————————————————————————
+
+原作者是个新手，我给改改。
+
+第三方库的安装实在麻烦，用先进的工具能规避很多烦恼，我选择vcpkg。
+
+vcpkg的安装参考其官网 https://github.com/Microsoft/vcpkg
+
+简单说下vcpkg安装步骤
+
+1、下载vcpkg源码
+
+2、打开powershell, 进入vcpkg源码路径，执行编译脚本.\bootstrap-vcpkg.bat
+
+3、.\vcpkg integrate install
+
+到这里就可以了，不过为了更方便使用，我将vcpkg所在路径设置到环境变量，VCPKG_PATH=E:\Tools\vcpkg\
+
+使用命令行或者图形界面都可以
+
+![](PreviewImages/VCPKG.png)
+
+![](PreviewImages/VCPKG2.png)
+
+这样设置以后，可以直接在VS项目配置中引用环境变量，代替绝对路径。
+
+当项目放到别人的电脑上，只要设置同样的环境变量就可以了。不用修改项目配置，也不关心别人把第三方库装哪了，只要写进环境变量就行了。
+
+接下来需要安装opencv
+
+在powershell中跑个命令就行了 vcpkg install opencv:x64-windows
+
+
+
+***
+
+————————————————————————分割线by Tao [End]————————————————————————
+
+ 
 实现细节见：https://blog.csdn.net/u013165921/column/info/18269
 
 界面
