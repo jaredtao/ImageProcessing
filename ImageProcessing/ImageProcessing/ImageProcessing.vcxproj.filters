@@ -84,6 +84,9 @@
     <ClCompile Include="cpp\PaintWidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="cpp\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="ImageProcessing.ui">
@@ -121,16 +124,8 @@
     <ClInclude Include="header\Morp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
+    <ClInclude Include="header\stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="ImageProcessing.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="icon1.ico" />
-    <Image Include="Resources\Image\icon\icon.ico" />
-    <Image Include="..\Resources\Image\icon\icon.ico" />
   </ItemGroup>
 </Project>
